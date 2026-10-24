@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Metro Traffic Congestion — Design Thinking FA2</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <span class="tag">Design Thinking · FA2 · Poster Presentation</span>
+      <h1>Solving Metro Traffic Congestion</h1>
+      <p class="subtitle">Using GPS and data models to find hotspots and suggest alternate routes in Delhi &amp; Bengaluru.</p>
+      <p class="byline">Nikhil Shinde</p>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="#problem">Problem</a>
+      <a href="#empathize">Empathize</a>
+      <a href="#define">Define</a>
+      <a href="#ideate">Ideate</a>
+      <a href="#prototype">Prototype</a>
+      <a href="#test">Test</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section id="problem">
+      <h2>1. The Problem</h2>
+      <p>Metro cities like Delhi and Bengaluru face severe traffic congestion. Today, authorities still rely heavily on <strong>manual surveys</strong> to understand traffic — which is slow, expensive, and often outdated.</p>
+      <p>This leads to delayed decisions, poor route planning, and frustrated commuters stuck in jams every day.</p>
+    </section>
+
+    <section id="empathize">
+      <h2>2. Empathize</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Commuters</h3>
+          <p>Lose hours daily in traffic, miss work and appointments, and feel stressed.</p>
+        </div>
+        <div class="card">
+          <h3>Traffic Police</h3>
+          <p>Depend on manual counts and guesswork to manage junctions and diversions.</p>
+        </div>
+        <div class="card">
+          <h3>City Planners</h3>
+          <p>Need real data to design better roads, signals, and public transport.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="define">
+      <h2>3. Define</h2>
+      <p class="statement">"How might we use GPS and data models to automatically detect traffic hotspots and suggest alternate routes, so commuters and planners can act faster?"</p>
+    </section>
+
+    <section id="ideate">
+      <h2>4. Ideate</h2>
+      <ul>
+        <li>Collect live GPS data from vehicles and phones.</li>
+        <li>Build a data model that spots congestion hotspots.</li>
+        <li>Suggest alternate, less-crowded routes in real time.</li>
+        <li>Show a simple dashboard for planners and commuters.</li>
+      </ul>
+    </section>
+
+    <section id="prototype">
+      <h2>5. Prototype</h2>
+      <p>A lightweight web dashboard that:</p>
+      <ul>
+        <li>Marks congestion hotspots on a city map.</li>
+        <li>Ranks routes by current traffic load.</li>
+        <li>Recommends the fastest alternate route.</li>
+      </ul>
+      <div class="mock">
+        <div class="mock-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="mock-title">Traffic Dashboard</span>
+        </div>
+        <div class="mock-body">
+          <div class="hotspot">🔴 Hotspot: MG Road — heavy congestion</div>
+          <div class="route">✅ Suggested route: Outer Ring Road (saves ~18 min)</div>
+          <div class="route">🟡 Moderate: Airport Road</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="test">
+      <h2>6. Test &amp; Feedback</h2>
+      <p>Show the prototype to a few commuters and a traffic volunteer. Collect feedback on clarity, usefulness, and ease of use, then refine the dashboard.</p>
+    </section>
+
+    <section class="source">
+      <h2>Source</h2>
+      <p>Problem idea inspired by upGrad project ideas on smart traffic management.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Design Thinking FA2 · Metro Traffic Congestion · Nikhil Shinde</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
